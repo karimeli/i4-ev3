@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --color-primary: #e30808ae;       
+    --color-background: #eeeeee;       
+    --color-text: #121111;             
+    --font-size-base: 1rem;            
+    --font-family-1: 'Poppins', sans-serif; 
+    --transition-speed: 300ms;         
+    --border-radius-2: .5rem;         
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background); 
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
+    border-radius: var(--border-radius-2);
+}
+
+
+h1, h2, h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--color-primary); 
+}
+
+.btn-verde {
+    background-color: var(--color-primary);
+    color: white; 
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-2);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.btn-verde:hover {
+    background-color: #cf0707;
+    transform: scale(1.05);
+}
+
+
+.contenido {
+    background-color: var(--color-background); 
+    padding: 20px;
+    border-radius: var(--border-radius-2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
