@@ -1,63 +1,105 @@
-
 :root {
-    --color-primary: #e30808ae;       
-    --color-background: #eeeeee;       
-    --color-text: #121111;             
-    --font-size-base: 1rem;            
-    --font-family-1: 'Poppins', sans-serif; 
-    --transition-speed: 300ms;         
-    --border-radius-2: .5rem;         
+    --color-1: #33AAEE;      
+    --color-2: #4996C3;      
+    --color-3: #076AA3;      
+    --color-4: #FFFFFF;     
+    --color-background: #eeeeee;
+    --color-text: #121111;
+    --color-5: #054F7A;      
+    --shadow-1: 0 0 8px rgba(0, 0, 0, 0.1);  
+    --font-family-1: 'Poppins', sans-serif;  
+    --font-size-base: 1rem;
+    --border-radius-1: 0.5rem;
+    --border-radius-2: .5rem;  
+    --transition-speed: 300ms;  
 }
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
-    background-color: var(--color-background); 
+    background-color: var(--color-5); 
     font-family: var(--font-family-1);
     font-size: var(--font-size-base);
     color: var(--color-text);
     line-height: 1.6;
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff; 
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    box-shadow: var(--shadow-1);
     border-radius: var(--border-radius-2);
 }
 
-
-h1, h2, h3 {
-    font-size: 1.25rem;
+h1 {
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 20px;
-    color: var(--color-primary); 
+    color: var(--color-primary);
 }
 
-.btn-verde {
-    background-color: var(--color-primary);
-    color: white; 
+
+.btn-azul {
+    background-color: var(--color-1);
+    color: var(--color-4);
     padding: 0.5rem 1rem;
-    border-radius: var(--border-radius-2);
+    border-radius: var(--border-radius-1);
+    font-family: var(--font-family-1);
     border: none;
     cursor: pointer;
     transition: all var(--transition-speed);
 }
 
-.btn-verde:hover {
-    background-color: #cf0707;
+.btn-azul:hover {
+    background-color: #2c8bcb;
+    transform: scale(1.05);
+}
+
+.btn-azul-claro {
+    background-color: var(--color-2);
+    color: var(--color-4);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-1);
+    font-family: var(--font-family-1);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.btn-azul-claro:hover {
+    background-color: #357eab;
+    transform: scale(1.05);
+}
+
+.btn-azul-oscuro {
+    background-color: var(--color-3);
+    color: var(--color-4);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-1);
+    font-family: var(--font-family-1);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.btn-azul-oscuro:hover {
+    background-color: #065b80;
     transform: scale(1.05);
 }
 
 
-.contenido {
-    background-color: var(--color-background); 
+.div-personalizado {
+    background-color: var(--color-background);
     padding: 20px;
-    border-radius: var(--border-radius-2);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
     margin-top: 20px;
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--shadow-1);
+    color: var(--color-text);
+}
+
+.div-personalizado p {
+    font-family: var(--font-family-1);
+    font-size: 1rem;
 }
